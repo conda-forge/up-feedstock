@@ -12,7 +12,7 @@ source:
   sha256: 3ea2161ce77e68d7e34873cc80324f372a3b3f63bed9f1ad1aefd7969dd0c1d1
 
 build:
-  number: 1
+  number: 2
 
 requirements:
   build:
@@ -25,7 +25,7 @@ tests:
         - if: win
           then: m2-grep
     script:
-      - up --help 2>&1 | grep -q "Usage: COMMAND | up \[OPTIONS\]"
+      - "up --help 2>&1 | grep -q \"Usage: COMMAND | up \\[OPTIONS\\]\""
 
 about:
   license: Apache-2.0
